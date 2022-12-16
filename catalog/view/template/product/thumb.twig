@@ -1,10 +1,19 @@
+<style>
+.description {
+  text-overflow: ellipsis;
+  display: -webkit-box;
+  -webkit-line-clamp: 2; /* number of lines to show */
+  line-clamp: 2;
+  -webkit-box-orient: vertical;
+}
+</style>
 <form method="post" data-oc-toggle="ajax" data-oc-load="{{ cart }}" data-oc-target="#header-cart">
   <div class="product-thumb">
     <div class="image"><a href="{{ href }}"><img src="{{ thumb }}" alt="{{ name }}" title="{{ name }}" class="img-fluid"/></a></div>
     <div class="content">
       <div class="description">
         <h4><a href="{{ href }}">{{ name }}</a></h4>
-        <p>{{ description }}</p>
+        <p>{{ description }}<br/></p>
         {% if price %}
           <div class="price">
             {% if not special %}

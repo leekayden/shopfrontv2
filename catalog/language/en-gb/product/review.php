@@ -11,8 +11,8 @@ $_['text_success']    = 'Thank you for your review. It has been submitted to the
 $_['entry_name']       = 'Your Name';
 $_['entry_review']     = 'Your Review';
 $_['entry_rating']     = 'Rating';
-$_['entry_good']       = 'Good';
-$_['entry_bad']        = 'Bad';
+$_['entry_good']       = 'Excellent';
+$_['entry_bad']        = 'Poor';
 
 // Tabs
 $_['tab_review']       = 'Reviews (%s)';

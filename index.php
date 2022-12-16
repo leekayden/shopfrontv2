@@ -1,5 +1,5 @@
 <?php
-
+$env = "dev";
 // Version
 define('VERSION', '4.0.1.1');
 
@@ -19,3 +19,8 @@ require_once(DIR_SYSTEM . 'startup.php');
 
 // Framework
 require_once(DIR_SYSTEM . 'framework.php');
+
+// // Hot Reload
+// require "./HotReloader.php";
+// $reloader = new HotReloader();
+// $reloader->init();

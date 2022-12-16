@@ -1,3 +1,53 @@
+html, body, div, span, applet, object, iframe,
+h1, h2, h3, h4, h5, h6, p, blockquote, pre,
+a, abbr, acronym, address, big, cite, code,
+del, dfn, em, img, ins, kbd, q, s, samp,
+small, strike, strong, sub, sup, tt, var,
+b, u, i, center,
+dl, dt, dd, ol, ul, li,
+fieldset, form, label, legend,
+table, caption, tbody, tfoot, thead, tr, th, td,
+article, aside, canvas, details, embed, 
+figure, figcaption, footer, header, hgroup, 
+menu, nav, output, ruby, section, summary,
+time, mark, audio, video {
+	margin: 0;
+	padding: 0;
+	border: 0;
+	font-size: 100%;
+	font: inherit;
+	vertical-align: baseline;
+}
+/* HTML5 display-role reset for older browsers */
+article, aside, details, figcaption, figure, 
+footer, header, hgroup, menu, nav, section {
+	display: block;
+}
+body {
+	line-height: 1;
+}
+ol, ul {
+	list-style: none;
+}
+blockquote, q {
+	quotes: none;
+}
+blockquote:before, blockquote:after,
+q:before, q:after {
+	content: '';
+	content: none;
+}
+table {
+	border-collapse: collapse;
+	border-spacing: 0;
+}
+/* .description {
+  text-overflow: ellipsis;
+  display: -webkit-box;
+  -webkit-line-clamp: 2;
+  line-clamp: 2;
+  -webkit-box-orient: vertical;
+} */
 body {
   font-family: "Open Sans", sans-serif;
   font-weight: 400;
@@ -6,7 +56,12 @@ body {
   line-height: 20px;
   width: 100%;
 }
-h1, h2, h3, h4, h5, h6 {
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
   color: #444;
 }
 /* Override the bootstrap defaults */
@@ -55,9 +110,10 @@ label {
 .nav-tabs {
   margin-bottom: 15px;
 }
-div.required .col-form-label:before, div.required .form-label:before {
+div.required .col-form-label:before,
+div.required .form-label:before {
   content: "* ";
-  color: #F00;
+  color: #f00;
   font-weight: bold;
 }
 @media (min-width: 768px) {
@@ -149,20 +205,22 @@ div.required .col-form-label:before, div.required .form-label:before {
 }
 /* top */
 #top {
-  background-color: #EEEEEE;
+  background-color: #eeeeee;
   border-bottom: 1px solid #e2e2e2;
   padding: 10px 0;
   margin: 0 0 20px 0;
   min-height: 44px;
   position: relative;
 }
-#top .nav > .list-inline > .list-inline-item, #top .nav > .list-inline .list-inline-item > a, #top .nav > .list-inline .list-inline-item .dropdown > a {
+#top .nav > .list-inline > .list-inline-item,
+#top .nav > .list-inline .list-inline-item > a,
+#top .nav > .list-inline .list-inline-item .dropdown > a {
   color: #888;
-  text-shadow: 0 1px 0 #FFF;
+  text-shadow: 0 1px 0 #fff;
 }
 #top .btn-link {
   color: #888;
-  text-shadow: 0 1px 0 #FFF;
+  text-shadow: 0 1px 0 #fff;
   text-decoration: none;
 }
 #top .btn-link:hover {
@@ -197,7 +255,7 @@ footer a {
   font-size: 15px;
   line-height: 18px;
   padding: 0.57rem 35px;
-  text-shadow: 0 1px 0 #FFF;
+  text-shadow: 0 1px 0 #fff;
 }
 /* cart */
 #header-cart {
@@ -206,18 +264,18 @@ footer a {
 #header-cart > .btn {
   font-size: 12px;
   line-height: 18px;
-  color: #FFF;
+  color: #fff;
 }
 #header-cart .btn-lg {
   padding: 0.65rem 1rem;
 }
 #header-cart .btn:hover {
-  color: #FFF;
+  color: #fff;
 }
 #header-cart.open > .btn {
   background-image: none;
-  background-color: #FFFFFF;
-  border: 1px solid #E6E6E6;
+  background-color: #ffffff;
+  border: 1px solid #e6e6e6;
   color: #666;
   box-shadow: none;
   text-shadow: none;
@@ -293,14 +351,15 @@ footer a {
 #menu .see-all {
   display: block;
   margin-top: 0.5em;
-  border-top: 1px solid #DDD;
+  border-top: 1px solid #ddd;
   padding: 3px 20px;
   -webkit-border-radius: 0 0 4px 4px;
   -moz-border-radius: 0 0 4px 4px;
   border-radius: 0 0 3px 3px;
   font-size: 12px;
 }
-#menu .see-all:hover, #menu .see-all:focus {
+#menu .see-all:hover,
+#menu .see-all:focus {
   text-decoration: none;
   color: #ffffff;
   background-color: #229ac8;
@@ -409,7 +468,7 @@ footer h5 {
   font-size: 15px;
 }
 .breadcrumb > li.breadcrumb-item {
-  text-shadow: 0 1px 0 #FFF;
+  text-shadow: 0 1px 0 #fff;
   padding: 0 20px;
   position: relative;
   white-space: nowrap;
@@ -425,8 +484,8 @@ footer h5 {
   right: -5px;
   width: 26px;
   height: 26px;
-  border-right: 1px solid #DDD;
-  border-bottom: 1px solid #DDD;
+  border-right: 1px solid #ddd;
+  border-bottom: 1px solid #ddd;
   -webkit-transform: rotate(-45deg);
   -moz-transform: rotate(-45deg);
   -o-transform: rotate(-45deg);
@@ -447,7 +506,12 @@ footer h5 {
   background-repeat: repeat-x;
   border-color: #dddddd #dddddd #b3b3b3 #b7b7b7;
 }
-.btn-light:hover, .btn-light:focus, .btn-light:active, .btn-light.active, .btn-light.disabled, .btn-light[disabled] {
+.btn-light:hover,
+.btn-light:focus,
+.btn-light:active,
+.btn-light.active,
+.btn-light.disabled,
+.btn-light[disabled] {
   color: #333;
   background-color: #e6e6e6;
   border-color: #adadad;
@@ -460,7 +524,12 @@ footer h5 {
   background-repeat: repeat-x;
   border-color: #1f90bb #1f90bb #145e7a;
 }
-.btn-primary:hover, .btn-primary:focus, .btn-primary:active, .btn-primary.active, .btn-primary.disabled, .btn-primary[disabled] {
+.btn-primary:hover,
+.btn-primary:focus,
+.btn-primary:active,
+.btn-primary.active,
+.btn-primary.disabled,
+.btn-primary[disabled] {
   background-position: 0;
 }
 .btn-warning {
@@ -470,7 +539,12 @@ footer h5 {
   background-repeat: repeat-x;
   border-color: #f89406 #f89406 #ad6704;
 }
-.btn-warning:hover, .btn-warning:focus, .btn-warning:active, .btn-warning.active, .btn-warning.disabled, .btn-warning[disabled] {
+.btn-warning:hover,
+.btn-warning:focus,
+.btn-warning:active,
+.btn-warning.active,
+.btn-warning.disabled,
+.btn-warning[disabled] {
   box-shadow: inset 0 1000px 0 rgba(0, 0, 0, 0.1);
 }
 .btn-danger {
@@ -480,7 +554,12 @@ footer h5 {
   background-repeat: repeat-x;
   border-color: #bd362f #bd362f #802420;
 }
-.btn-danger:hover, .btn-danger:focus, .btn-danger:active, .btn-danger.active, .btn-danger.disabled, .btn-danger[disabled] {
+.btn-danger:hover,
+.btn-danger:focus,
+.btn-danger:active,
+.btn-danger.active,
+.btn-danger.disabled,
+.btn-danger[disabled] {
   box-shadow: inset 0 1000px 0 rgba(0, 0, 0, 0.1);
 }
 .btn-success {
@@ -490,7 +569,12 @@ footer h5 {
   background-repeat: repeat-x;
   border-color: #51a351 #51a351 #387038;
 }
-.btn-success:hover, .btn-success:focus, .btn-success:active, .btn-success.active, .btn-success.disabled, .btn-success[disabled] {
+.btn-success:hover,
+.btn-success:focus,
+.btn-success:active,
+.btn-success.active,
+.btn-success.disabled,
+.btn-success[disabled] {
   box-shadow: inset 0 1000px 0 rgba(0, 0, 0, 0.1);
 }
 .btn-info {
@@ -500,17 +584,24 @@ footer h5 {
   background-repeat: repeat-x;
   border-color: #dc512c #dc512c #a2371a;
 }
-.btn-info:hover, .btn-info:focus, .btn-info:active, .btn-info.active, .btn-info.disabled, .btn-info[disabled] {
+.btn-info:hover,
+.btn-info:focus,
+.btn-info:active,
+.btn-info.active,
+.btn-info.disabled,
+.btn-info[disabled] {
   background-image: none;
   background-color: #df5c39;
 }
 .btn-link {
   border-color: rgba(0, 0, 0, 0);
   cursor: pointer;
-  color: #23A1D1;
+  color: #23a1d1;
   border-radius: 0;
 }
-.btn-link, .btn-link:active, .btn-link[disabled] {
+.btn-link,
+.btn-link:active,
+.btn-link[disabled] {
   background-color: rgba(0, 0, 0, 0);
   background-image: none;
   box-shadow: none;
@@ -523,7 +614,12 @@ footer h5 {
   background-repeat: repeat-x;
   border-color: #222222 #222222 #000000;
 }
-.btn-inverse:hover, .btn-inverse:focus, .btn-inverse:active, .btn-inverse.active, .btn-inverse.disabled, .btn-inverse[disabled] {
+.btn-inverse:hover,
+.btn-inverse:focus,
+.btn-inverse:active,
+.btn-inverse.active,
+.btn-inverse.disabled,
+.btn-inverse[disabled] {
   background-color: #222222;
   background-image: linear-gradient(to bottom, #333333, #111111);
 }
@@ -601,11 +697,11 @@ footer h5 {
   font-size: 15px;
 }
 .rating .fa-star {
-  color: #FC0;
+  color: #fc0;
   font-size: 15px;
 }
 .rating .fa-star + .fa-star {
-  color: #E69500;
+  color: #e69500;
 }
 /* product list */
 .price {
@@ -627,7 +723,7 @@ footer h5 {
 .navbar-light .navbar-toggler {
   font-size: 15px;
   font-stretch: expanded;
-  color: #FFF;
+  color: #fff;
   padding: 6px 12px;
   background-color: #229ac8;
   background-image: linear-gradient(to bottom, #23a1d1, #1f90bb);
@@ -662,5 +758,5 @@ footer h5 {
 }
 #cookie div {
   font-size: 16px;
-  color: #FFFFFF;
+  color: #ffffff;
 }
